@@ -40,7 +40,8 @@ def evaluate(data_loader, model, device):
 	# put model in evaluation mode
 	model.eval()
 	# init lists to store targets and outputs
-	final_targets = [] final_outputs = []
+	final_targets = [] 
+	final_outputs = []
 	# we use no_grad context
 	with torch.no_grad():
 		for data in data_loader:
